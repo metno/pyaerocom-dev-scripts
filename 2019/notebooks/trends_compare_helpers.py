@@ -197,6 +197,7 @@ def compute_trends_current(s_monthly, periods, only_yearly=True):
 
                 #theil slope
                 res=theilslopes(y,x,0.9)
+                
                 reg=res[0]*np.asarray(x)+res[1]*np.ones(len(x))
                 slp=res[0]*1000*60*60*24*365/reg[0] #slp per milliseconds to slp per year
                 data[seas]['trends'][period]['slp'] = slp*100 #in percent
@@ -333,6 +334,7 @@ def compute_trends_new(s_monthly, periods, only_yearly=True):
             # or last value in tseries (or both) is NaN)
             start_yr, stop_yr = years_from_periodstr(period)
             num_yrs = stop_yr - start_yr
+            
             #filtering to the period limit
             jsp0 = to_jsdate(np.datetime64('{}-01-01'.format(start_yr)))
             jsp1 = to_jsdate(np.datetime64('{}-12-31'.format(stop_yr)))
@@ -345,7 +347,6 @@ def compute_trends_new(s_monthly, periods, only_yearly=True):
             
             # filter data by period
             jsdate = jsdate[tmask]
-            dates = np.asarray(data[seas]['date'])[tmask]
             
             # vector containing data values
             y = np.asarray(data[seas]['val'])[tmask]
@@ -371,11 +372,9 @@ def compute_trends_new(s_monthly, periods, only_yearly=True):
                 data[seas]['trends'][period]['pval'] = pval
 
                 #theil slope
-                
                 res = theilslopes(_y,_jsdate, 0.9)
                 slope = res[0]
                 yoffs = res[1]
-                
                 # regression line (evaluate at ACTUAL time-stamps corresponding
                 # to input period -> jsdate and not _jsdate, which may have 
                 # removed first or last year, or both)
@@ -637,7 +636,7 @@ if __name__ == '__main__':
     axes.append(ax)
     # process and plot trends signal
     axes.append(pp_current(st))
-    axes.append(pp_new(s0, coverage=9))
+    axes.append(pp_new(st))
     
     RUN_ALL = False
     if RUN_ALL:

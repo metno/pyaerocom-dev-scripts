@@ -1,0 +1,2747 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 9 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://webcache.googleusercontent.com/search?q=cache:nGfgmcgU2l4J:https://library.wmo.int/pmb_ged/wmo-td_1507.pdf+&cd=2&hl=sv&ct=clnk&gl=se&client=ubuntu)
+>> /Border [ 0 0 0 ] /Rect [ 326.6829 719.0236 362.6928 731.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+5 0 obj
+<<
+/Annots [ 4 0 R ] /Contents 22 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:nmhyslop@ucdavis.edu)
+>> /Border [ 0 0 0 ] /Rect [ 171.0429 372.0236 277.3429 384.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/Annots [ 7 0 R ] /Contents 24 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Contents 25 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://views.cira.colostate.edu/fed/QueryWizard/)
+>> /Border [ 0 0 0 ] /Rect [ 411.1929 498.0236 453.9929 510.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Annots [ 11 0 R ] /Contents 26 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/Outlines 15 0 R /PageLabels 27 0 R /PageMode /UseNone /Pages 21 0 R /Type /Catalog
+>>
+endobj
+14 0 obj
+<<
+/Author () /CreationDate (D:20190829123518+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20190829123518+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Data format description) /Trapped /False
+>>
+endobj
+15 0 obj
+<<
+/Count 5 /First 16 0 R /Last 20 0 R /Type /Outlines
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 5 0 R /XYZ 62.69291 695.0236 0 ] /Next 17 0 R /Parent 15 0 R /Title (Header)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 6 0 R /XYZ 62.69291 531.0236 0 ] /Next 18 0 R /Parent 15 0 R /Prev 16 0 R /Title (Records)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 8 0 R /XYZ 62.69291 699.0236 0 ] /Next 19 0 R /Parent 15 0 R /Prev 17 0 R /Title (Example)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 10 0 R /XYZ 62.69291 543.0236 0 ] /Next 20 0 R /Parent 15 0 R /Prev 18 0 R /Title (File name convention)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 549.0236 0 ] /Parent 15 0 R /Prev 19 0 R /Title (Status flags)
+>>
+endobj
+21 0 obj
+<<
+/Count 5 /Kids [ 5 0 R 6 0 R 8 0 R 10 0 R 12 0 R ] /Type /Pages
+>>
+endobj
+22 0 obj
+<<
+/Length 10601
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 122.7049 0 Td (Data format description) Tj T* -122.7049 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 707.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .599987 Tw 12 TL /F1 10 Tf 0 0 0 rg (Tables below describes a data file format specified in GAW ) Tj 0 0 .501961 rg (Report) Tj 0 0 0 rg ( no. 188 and this format is used here.) Tj T* 0 Tw (The file format consists of a header part and a data part and employs an ASCII encodeing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 674.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Header) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 662.0236 cm
+Q
+q
+1 0 0 1 62.69291 104.0236 cm
+1 1 1 rg
+n 0 558 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 540 469.8898 -18 re f*
+1 1 1 rg
+n 0 522 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 504 469.8898 -18 re f*
+1 1 1 rg
+n 0 486 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 468 469.8898 -18 re f*
+1 1 1 rg
+n 0 450 469.8898 -42 re f*
+.878431 .878431 .878431 rg
+n 0 408 469.8898 -18 re f*
+1 1 1 rg
+n 0 390 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 372 469.8898 -30 re f*
+1 1 1 rg
+n 0 342 469.8898 -42 re f*
+.878431 .878431 .878431 rg
+n 0 300 469.8898 -18 re f*
+1 1 1 rg
+n 0 282 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 264 469.8898 -18 re f*
+1 1 1 rg
+n 0 246 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 228 469.8898 -42 re f*
+1 1 1 rg
+n 0 186 469.8898 -42 re f*
+.878431 .878431 .878431 rg
+n 0 144 469.8898 -42 re f*
+1 1 1 rg
+n 0 102 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 84 469.8898 -18 re f*
+1 1 1 rg
+n 0 66 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 48 469.8898 -18 re f*
+1 1 1 rg
+n 0 30 469.8898 -30 re f*
+.960784 .960784 .862745 rg
+n 0 558 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 543 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 24.14537 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 2.622683 0 Td (Line) Tj T* -2.622683 0 Td ET
+Q
+Q
+q
+1 0 0 1 42.14537 543 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 142.9087 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 44.22436 0 Td (Header item) Tj T* -44.22436 0 Td ET
+Q
+Q
+q
+1 0 0 1 197.0541 543 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 266.8357 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 115.9078 0 Td (Content) Tj T* -115.9078 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 525 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (01) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 525 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (TITLE:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 525 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Observation title \(parameter, temporal representative, etc.\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 507 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (02) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 507 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (FILE NAME:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 507 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (File name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 489 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (03) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 489 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DATA FORMAT:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 489 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Format version of this file that is given by the WDCGG) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 471 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (04) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 471 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (TOTAL LINES:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 471 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Number of total lines) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 453 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (05) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 453 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (HEADER LINES:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 453 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Number of header lines) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 435 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (06) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 435 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DATA VERSION:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 411 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (Data version of measurement data \(see Section 5.2\). The) Tj T* (version is given by the WDCGG, and managed using the) Tj T* (date.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 393 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (07) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 393 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (STATION NAME:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 393 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Name of the station where the data were observed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 375 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (08) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 375 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (STATION CATEGORY:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 375 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (GAW station category) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 357 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (09) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 357 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (OBSERVATION CATEGORY:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 345 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Observation category defined in Section 3.3 \(empty in) Tj T* (meteorological data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 327 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 327 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (COUNTRY/TERRITORY:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 303 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (The name of the country/territory where the station is) Tj T* (located, or to which the ship or aircraft belongs is described) Tj T* (here.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 285 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (11) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 285 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CONTRIBUTOR:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 285 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (See section 2.2.1. \(empty in meteorological data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 267 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (12) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 267 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (LATITUDE \(degree\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 267 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Latitude of the station location \(decimal\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (13) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (LONGITUDE \(degree\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Longitude of the station location \(decimal\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 231 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (14) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 231 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ALTITUDE \(m\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 231 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Altitude of the station above sea level) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 213 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (15) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (NUMBER OF SAMPLING) Tj T* (HEIGHTS:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 189 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (The number of sampling heights from the ground for vertical) Tj T* (profile observation. Unity for ground based observation.) Tj T* (\(empty in meteorological data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 171 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (16) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 171 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (SAMPLING HEIGHTS \(m\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 147 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (The heights of the sampling intake from the ground. In the) Tj T* (case of vertical profile observation, the heights are arranged) Tj T* (in decreasing order \(empty in meteorological data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (17) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CONTACT POINT:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 105 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (E-mail address, fax number, or telephone number of) Tj T* (Contact person for measurement \(empty in meteorological) Tj T* (data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (18) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PARAMETER:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Observation parameter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (19) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (COVERING PERIOD:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Period of time in which measurement data are included.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (20) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (TIME INTERVAL:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Temporal resolution of each measurement datum.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (21) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (MEASUREMENT UNIT:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Unit of the mole fractions. \(empty in meteorological data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (22) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (MEASUREMENT METHOD:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Measurement method employed. \(empty in meteorological) Tj T* (data\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 540 m 469.8898 540 l S
+n 0 522 m 469.8898 522 l S
+n 0 504 m 469.8898 504 l S
+n 0 486 m 469.8898 486 l S
+n 0 468 m 469.8898 468 l S
+n 0 450 m 469.8898 450 l S
+n 0 408 m 469.8898 408 l S
+n 0 390 m 469.8898 390 l S
+n 0 372 m 469.8898 372 l S
+n 0 342 m 469.8898 342 l S
+n 0 300 m 469.8898 300 l S
+n 0 282 m 469.8898 282 l S
+n 0 264 m 469.8898 264 l S
+n 0 246 m 469.8898 246 l S
+n 0 228 m 469.8898 228 l S
+n 0 186 m 469.8898 186 l S
+n 0 144 m 469.8898 144 l S
+n 0 102 m 469.8898 102 l S
+n 0 84 m 469.8898 84 l S
+n 0 66 m 469.8898 66 l S
+n 0 48 m 469.8898 48 l S
+n 0 30 m 469.8898 30 l S
+n 36.14537 0 m 36.14537 558 l S
+n 191.0541 0 m 191.0541 558 l S
+n 0 558 m 469.8898 558 l S
+n 0 0 m 0 558 l S
+n 469.8898 0 m 469.8898 558 l S
+Q
+Q
+ 
+endstream
+endobj
+23 0 obj
+<<
+/Length 9892
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 543.0236 cm
+1 1 1 rg
+n 0 222 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 192 469.8898 -18 re f*
+1 1 1 rg
+n 0 174 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 144 469.8898 -102 re f*
+1 1 1 rg
+n 0 42 469.8898 -42 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 207 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (23) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 207 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (SAMPLING TYPE:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 195 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (See [Sampling type] in Annex 3. \(empty in meteorological) Tj T* (data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (24) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (TIME ZONE:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Reported time zone with reference to UTC) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (25) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (REFERENCE SCALE:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 147 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Scale \(traceability\) employed in the measurement. \(empty in) Tj T* (meteorological data\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 117 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (26 -) Tj T* (29) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CREDIT FOR USE:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 86 Tm /F1 10 Tf 12 TL (This is a formal notification for data users. "For scientific) Tj T* (purposes, access to these data is unlimited and provided) Tj T* (without charge. By their use you accept that an offer of) Tj T* (co-authorship will be made through personal contact with) Tj T* (the data providers or owners whenever substantial use is) Tj T* (made of their data. In all cases, an acknowledgement must) Tj T* (be made to the data providers or owners and the data) Tj T* (centre when these data areused within a publication.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (30) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.14537 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (COMMENTS:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 197.0541 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (Any comments necessary for data usage are described. A) Tj T* (definition of remarks \(see Section 2.6 and Table 8\) is) Tj T* (described if needed.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 222 m 469.8898 222 l S
+n 0 192 m 469.8898 192 l S
+n 0 174 m 469.8898 174 l S
+n 0 144 m 469.8898 144 l S
+n 0 42 m 469.8898 42 l S
+n 36.14537 0 m 36.14537 222 l S
+n 191.0541 0 m 191.0541 222 l S
+n 0 0 m 0 222 l S
+n 469.8898 0 m 469.8898 222 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+Q
+q
+1 0 0 1 62.69291 510.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Records) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+Q
+q
+1 0 0 1 62.69291 102.0236 cm
+1 1 1 rg
+n 0 396 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 366 469.8898 -78 re f*
+1 1 1 rg
+n 0 288 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 258 469.8898 -42 re f*
+1 1 1 rg
+n 0 216 469.8898 -42 re f*
+.878431 .878431 .878431 rg
+n 0 174 469.8898 -18 re f*
+1 1 1 rg
+n 0 156 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 126 469.8898 -18 re f*
+1 1 1 rg
+n 0 108 469.8898 -42 re f*
+.878431 .878431 .878431 rg
+n 0 66 469.8898 -66 re f*
+.960784 .960784 .862745 rg
+n 0 396 469.8898 -30 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 369 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 34.14989 24 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 7.349944 0 Td (Item) Tj T* -2.78 0 Td (name) Tj T* -4.569944 0 Td ET
+Q
+Q
+q
+1 0 0 1 52.14989 369 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 38.34533 24 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.392666 0 Td (Number) Tj T* .55 0 Td (of digits) Tj T* -1.942666 0 Td ET
+Q
+Q
+q
+1 0 0 1 102.4952 369 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 59.32255 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 7.771277 0 Td ("No Data") Tj T* -7.771277 0 Td ET
+Q
+Q
+q
+1 0 0 1 173.8178 369 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 122.2542 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 43.61711 0 Td (Content) Tj T* -43.61711 0 Td ET
+Q
+Q
+q
+1 0 0 1 308.072 369 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 155.8178 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 17.32389 0 Td (Supplementary explanation) Tj T* -17.32389 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 351 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DATE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 351 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 351 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (9999-99-99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 327 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (Beginning date of) Tj T* (measurement) Tj T* (\(YYYY-MM-DD\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 291 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 62 Tm /F1 10 Tf 12 TL (7 digits are used only for ice core) Tj T* (to represent estimated year. The) Tj T* (date for a monthly mean is the first) Tj T* (date of the month. For example,) Tj T* (2005-02-01 is used for the monthly) Tj T* (mean in February 2005.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (TIME) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (99:99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 261 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Beginning time of) Tj T* (measurement \(hh:mm\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 261 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (The time for a monthly or daily) Tj T* (mean is represented as 00:00.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 243 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DATE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 243 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 243 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (9999-99-99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 231 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (End date of measurement) Tj T* (\(YYYY-MM-DD\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 219 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (In the case of a continuous) Tj T* (observation, end date is filled with) Tj T* (\2219999-99-99\222.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (TIME) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (99:99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 189 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (End time of measurement) Tj T* (\(hh:mm\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (In the case of a continuous) Tj T* (observation, end time is filled with) Tj T* (\22199:99\222.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DATA) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (-99999.999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Mole fractions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 159 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (16 digits are used only for VOCs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 141 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ND) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 141 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 141 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (-9999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Number of data used to) Tj T* (average the data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (SD) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (-999.99) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Standard deviation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (F) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (-9999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Data flag) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (The details of data flags should be) Tj T* (specified by the Contributor in the) Tj T* (metadata.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (-9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL (Calculation Status) Tj T* (indicating who provides the) Tj T* (data. \2230\224 means the) Tj T* (Contributor. \2231\224 means the) Tj T* (WDCGG.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (This value is added by the) Tj T* (WDCGG.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 0 m 469.8898 0 l S
+n 0 366 m 469.8898 366 l S
+n 0 288 m 469.8898 288 l S
+n 0 258 m 469.8898 258 l S
+n 0 216 m 469.8898 216 l S
+n 0 174 m 469.8898 174 l S
+n 0 156 m 469.8898 156 l S
+n 0 126 m 469.8898 126 l S
+n 0 108 m 469.8898 108 l S
+n 0 66 m 469.8898 66 l S
+n 46.14989 0 m 46.14989 396 l S
+n 96.49522 0 m 96.49522 396 l S
+n 167.8178 0 m 167.8178 396 l S
+n 302.072 0 m 302.072 396 l S
+n 0 396 m 469.8898 396 l S
+n 0 0 m 0 396 l S
+n 469.8898 0 m 469.8898 396 l S
+Q
+Q
+ 
+endstream
+endobj
+24 0 obj
+<<
+/Length 5196
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 711.0236 cm
+1 1 1 rg
+n 0 54 469.8898 -54 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (REM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.14989 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.4952 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (-99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 173.8178 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Data remarks) Tj T* ET
+Q
+Q
+q
+1 0 0 1 308.072 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL (Additional information on data to) Tj T* (be included. The definition is) Tj T* (described under \223COMMENTS\224 of) Tj T* (the header part.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 54 m 469.8898 54 l S
+n 46.14989 0 m 46.14989 54 l S
+n 96.49522 0 m 96.49522 54 l S
+n 167.8178 0 m 167.8178 54 l S
+n 302.072 0 m 302.072 54 l S
+n 0 0 m 0 54 l S
+n 469.8898 0 m 469.8898 54 l S
+n 0 0 m 469.8898 0 l S
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Example) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 660.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C01 TITLE: OCf daily mean data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 642.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C02 FILE NAME: badl1.improve.as.cs.ocf.nl.da.dat) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 624.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C03 DATA FORMAT: Version 1.0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 606.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C04 TOTAL LINES: 44) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C05 HEADER LINES: 32) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 570.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C06 DATA VERSION:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 552.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C07 STATION NAME: Badlands NP) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 534.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C08 STATION CATEGORY: global) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 516.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C09 OBSERVATION CATEGORY: Air sampling observation at a stationary platform) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C10 COUNTRY/TERRITORY: SD) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 480.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C11 CONTRIBUTOR: improve) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 462.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C12 LATITUDE: 43.74350) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 444.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C13 LONGITUDE: -101.94120) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 426.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C14 ALTITUDE: 736) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 408.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C15 NUMBER OF SAMPLING HEIGHTS: 1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C16 SAMPLING HEIGHTS:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 372.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (C17 CONTACT POINT: ) Tj 0 0 .501961 rg (nmhyslop@ucdavis.edu) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 354.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C18 PARAMETER: OCf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C19 COVERING PERIOD: 2017-01-01 2017-01-31) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C20 TIME INTERVAL: daily) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 300.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C21 MEASUREMENT UNIT: ug/m^3 LC) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 282.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C22 MEASUREMENT METHOD:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 264.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C23 SAMPLING TYPE: continuous) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 246.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C24 TIME ZONE: UTC) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 228.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C25 MEASUREMENT SCALE:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 198.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.32311 Tw (C26 CREDIT FOR USE: This is a formal notification for data users. 'For scientific purposes, access to) Tj T* 0 Tw (these data is unlimited) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 168.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.451163 Tw (C27 and provided without charge. By their use you accept that an offer of co-authorship will be made) Tj T* 0 Tw (through personal contact) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.124431 Tw (C28 with the data providers or owners whenever substantial use is made of their data. In all cases, an) Tj T* 0 Tw (acknowledgement) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 108.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .065488 Tw (C29 must be made to the data providers or owners and the data centre when these data are used within a) Tj T* 0 Tw (publication.') Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 90.02362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C30 COMMENT:) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+25 0 obj
+<<
+/Length 7983
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C31) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (C32 DATE TIME DATE TIME DATA ND SD F CS REM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-04 00:00 9999-99-99 99:99 0.398 -9999 0.09 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 699.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-07 00:00 9999-99-99 99:99 0.495 -9999 0.09 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 681.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-10 00:00 9999-99-99 99:99 0.658 -9999 0.10 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-13 00:00 9999-99-99 99:99 0.851 -9999 0.11 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-16 00:00 9999-99-99 99:99 0.483 -9999 0.09 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-19 00:00 9999-99-99 99:99 0.779 -9999 0.10 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-22 00:00 9999-99-99 99:99 0.431 -9999 0.09 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-25 00:00 9999-99-99 99:99 0.175 -9999 0.08 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 573.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-28 00:00 9999-99-99 99:99 0.213 -9999 0.08 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 555.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2017-01-31 00:00 9999-99-99 99:99 0.210 -9999 0.08 8 -9 -99999999) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 522.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (File name convention) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 504.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The following file naming convention is used \(inspired by the GAW Report no. 188\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 474.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F2 10 Tf 12 TL 14.01659 Tw ([Station code].[Contributor].[Observation category].[Sampling type].[Parameter].[Auxiliary) Tj T* 0 Tw (item].[Data type].dat) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 456.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (An example is:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 438.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (badl1.improve.as.cs.ocf.nl.da.dat) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 420.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Station code) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 402.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (e.g. badl1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Contributor) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (e.g. improve) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 348.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Observation category) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 342.0236 cm
+Q
+q
+1 0 0 1 62.69291 342.0236 cm
+Q
+q
+1 0 0 1 62.69291 330.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (as: Air observation at a stationary platform) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+Q
+q
+1 0 0 1 62.69291 312.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (am: Air observation by a mobile platform) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 306.0236 cm
+Q
+q
+1 0 0 1 62.69291 294.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ap: Vertical profile observation of air) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 288.0236 cm
+Q
+q
+1 0 0 1 62.69291 276.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (tc: Total column observation at a stationary platform) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 270.0236 cm
+Q
+q
+1 0 0 1 62.69291 258.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (hy: Hydrographic observation by ships) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 252.0236 cm
+Q
+q
+1 0 0 1 62.69291 240.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ic: Ice core observation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 234.0236 cm
+Q
+q
+1 0 0 1 62.69291 222.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (sf: Observation of surface seawater and overlying air) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 222.0236 cm
+Q
+q
+1 0 0 1 62.69291 204.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Sampling type) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 198.0236 cm
+Q
+q
+1 0 0 1 62.69291 198.0236 cm
+Q
+q
+1 0 0 1 62.69291 186.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (cn: Continuous or quasi-continuous in situ measurement) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 180.0236 cm
+Q
+q
+1 0 0 1 62.69291 168.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (fl: Analysis of air samples in flasks) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 162.0236 cm
+Q
+q
+1 0 0 1 62.69291 150.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (fi: Filter measurement) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 144.0236 cm
+Q
+q
+1 0 0 1 62.69291 132.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (rs: Remote sensing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 126.0236 cm
+Q
+q
+1 0 0 1 62.69291 114.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ic: Analysis of ice core samples) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 108.0236 cm
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (bo: Analysis of samples in bottles) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 90.02362 cm
+Q
+q
+1 0 0 1 62.69291 78.02362 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ot: Other) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 78.02362 cm
+Q
+ 
+endstream
+endobj
+26 0 obj
+<<
+/Length 9286
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Parameter) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (e.g. ocf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Auxiliary item) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 687.0236 cm
+q
+BT 1 0 0 1 0 14 Tm -0.015512 Tw 12 TL /F1 10 Tf 0 0 0 rg (If a data file is NOT identified uniquely with the codes above, this field is filled with some characters to give) Tj T* 0 Tw (a unique filename. Most files have ) Tj /F3 10 Tf (nl) Tj /F1 10 Tf ( in this field, which means ) Tj /F3 10 Tf (NULL) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 669.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([) Tj /F2 10 Tf (Data type) Tj /F1 10 Tf (]:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+Q
+q
+1 0 0 1 62.69291 651.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ev: Event sampling data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+Q
+q
+1 0 0 1 62.69291 633.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (om: One-minute mean data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+Q
+q
+1 0 0 1 62.69291 615.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (tm: Ten-minute mean data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (hrxxxx: Hourly mean data observed in the year xxxx) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+Q
+q
+1 0 0 1 62.69291 579.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (da: Daily mean data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 573.0236 cm
+Q
+q
+1 0 0 1 62.69291 561.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (mo: Monthly mean data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 561.0236 cm
+Q
+q
+1 0 0 1 62.69291 528.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Status flags) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.061098 Tw 12 TL /F1 10 Tf 0 0 0 rg (The description of the various status flags are dot described in the header of the data file. Table below) Tj T* 0 Tw (describes status flages deployed by the ) Tj /F3 10 Tf (Federal Land Manager Environmental) Tj /F1 10 Tf ( ) Tj 0 0 .501961 rg (Database) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 492.0236 cm
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+1 1 1 rg
+n 0 354 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 324 469.8898 -18 re f*
+1 1 1 rg
+n 0 306 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 288 469.8898 -18 re f*
+1 1 1 rg
+n 0 270 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 252 469.8898 -18 re f*
+1 1 1 rg
+n 0 234 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 216 469.8898 -18 re f*
+1 1 1 rg
+n 0 198 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 180 469.8898 -18 re f*
+1 1 1 rg
+n 0 162 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 144 469.8898 -18 re f*
+1 1 1 rg
+n 0 126 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 108 469.8898 -18 re f*
+1 1 1 rg
+n 0 90 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 72 469.8898 -18 re f*
+1 1 1 rg
+n 0 54 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 36 469.8898 -18 re f*
+1 1 1 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 354 469.8898 -30 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 327 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 46.73622 24 re f*
+Q
+q
+BT 1 0 0 1 0 14 Tm 9.19311 0 Td 12 TL /F1 10 Tf 0 0 0 rg (Status) Tj T* 4.45 0 Td (Flag) Tj T* -13.64311 0 Td ET
+Q
+Q
+q
+1 0 0 1 64.73622 327 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 399.1535 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 174.5718 0 Td (Description) Tj T* -174.5718 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 309 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (H1 / 0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 309 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Historical data that have not been assessed or validated.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 291 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (I0 / 1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 291 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Invalid value - unknown reason) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (I1 / 2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 273 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Invalid value - known reason) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 255 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (I2 / 3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 255 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Invalid value \(-999\), though sample-level flag seems valid \(SEM\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 237 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (M1 / 4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 237 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Missing value because no value is available) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 219 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (M2 / 5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 219 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Missing value because invalidated by data originator) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (M3 / 6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Missing value due to clogged filter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 183 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (NA / 7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 183 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Not available from source data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 165 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V0 / 8) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 165 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid value) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 147 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V1 / 9) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 147 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid value but comprised wholly or partially of below detection limit data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V2 / 10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid estimated value) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V3 / 11) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid interpolated value) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V4 / 12) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid value despite failing to meet some QC or statistical criteria) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V5 / 13) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid value but qualified because of possible contamination) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V6 / 14) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid value but qualified due to non-standard sampling conditions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (V7 / 15) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid value set equal to the detection limit \(DL\) since the value was below the DL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (VM / 16) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid modeled value) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (VS / 17) Tj T* ET
+Q
+Q
+q
+1 0 0 1 64.73622 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Valid substituted value) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 324 m 469.8898 324 l S
+n 0 306 m 469.8898 306 l S
+n 0 288 m 469.8898 288 l S
+n 0 270 m 469.8898 270 l S
+n 0 252 m 469.8898 252 l S
+n 0 234 m 469.8898 234 l S
+n 0 216 m 469.8898 216 l S
+n 0 198 m 469.8898 198 l S
+n 0 180 m 469.8898 180 l S
+n 0 162 m 469.8898 162 l S
+n 0 144 m 469.8898 144 l S
+n 0 126 m 469.8898 126 l S
+n 0 108 m 469.8898 108 l S
+n 0 90 m 469.8898 90 l S
+n 0 72 m 469.8898 72 l S
+n 0 54 m 469.8898 54 l S
+n 0 36 m 469.8898 36 l S
+n 0 18 m 469.8898 18 l S
+n 58.73622 0 m 58.73622 354 l S
+n 0 354 m 469.8898 354 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 354 l S
+n 469.8898 0 m 469.8898 354 l S
+Q
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+Q
+ 
+endstream
+endobj
+27 0 obj
+<<
+/Nums [ 0 28 0 R 1 29 0 R 2 30 0 R 3 31 0 R 4 32 0 R ]
+>>
+endobj
+28 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+29 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+30 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+31 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+32 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000649 00000 n 
+0000000872 00000 n 
+0000001077 00000 n 
+0000001256 00000 n 
+0000001479 00000 n 
+0000001594 00000 n 
+0000001800 00000 n 
+0000002001 00000 n 
+0000002226 00000 n 
+0000002332 00000 n 
+0000002613 00000 n 
+0000002687 00000 n 
+0000002794 00000 n 
+0000002915 00000 n 
+0000003036 00000 n 
+0000003171 00000 n 
+0000003285 00000 n 
+0000003371 00000 n 
+0000014025 00000 n 
+0000023969 00000 n 
+0000029217 00000 n 
+0000037252 00000 n 
+0000046590 00000 n 
+0000046667 00000 n 
+0000046701 00000 n 
+0000046735 00000 n 
+0000046769 00000 n 
+0000046803 00000 n 
+trailer
+<<
+/ID 
+[<633e71d85c63487f121746ee24fa91ce><633e71d85c63487f121746ee24fa91ce>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 33
+>>
+startxref
+46837
+%%EOF

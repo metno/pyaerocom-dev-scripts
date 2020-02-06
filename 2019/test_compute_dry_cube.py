@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 plt.close('all')
 
-r = pya.io.ReadGridded('MIROC-SPRINTARS_AP3-CTRL')
+r = pya.io.ReadGridded('ECHAM')
 
 print(r.filter_files(start=2010))
 

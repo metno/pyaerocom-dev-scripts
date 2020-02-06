@@ -4,8 +4,6 @@ from collections import OrderedDict as od
 
 r = pya.io.ReadUngridded()
 
-
-
 data= r.read('AeronetSunV3Lev2.daily',
             vars_to_retrieve=['od550aer', 'ang4487aer'],
             file_pattern='Bo*')

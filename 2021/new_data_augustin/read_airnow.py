@@ -6,7 +6,6 @@ import pandas as pd
 from tqdm import tqdm
 from datetime import datetime
 import numpy as np
-import dask.dataframe
 
 def read_airnow(files, vars_to_retrieve=None):
     # variables conversion and units dictionnary
@@ -92,29 +91,31 @@ def read_airnow(files, vars_to_retrieve=None):
         row = cfg.iloc[i]
 
         for var in vars_to_retrieve:
-            
-            #initialize stationData object
-            stationData = pya.StationData()
+            try:
+                #initialize stationData object
+                stationData = pya.StationData()
 
-            # fill stationData with cfg
-            stationData['data_id'] = 'CAMS84_AIRNOW'
-            stationData['station_name'] = row['name']
-            stationData['station_id'] = row['aqsid']
-            stationData['latitude'] = row['lat']
-            stationData['longitude'] = row['lon']
-            stationData['altitude'] = row['elevation']
-            stationData['ts_type'] = 'hourly'
+                # fill stationData with cfg
+                stationData['data_id'] = 'CAMS84_AIRNOW'
+                stationData['station_name'] = row['name']
+                stationData['station_id'] = row['aqsid']
+                stationData['latitude'] = row['lat']
+                stationData['longitude'] = row['lon']
+                stationData['altitude'] = row['elevation']
+                stationData['ts_type'] = 'hourly'
 
-            # fill stationData with data
-            # Then, for each variable
-            stationData[var] = data.loc[(data['station_id']==row['aqsid']) & (data['variable']==pyvars[var]['var'])].value.astype('datetime64[s]')
+                # fill stationData with data
+                # Then, for each variable
+                stationData[var] = data.loc[(data['station_id']==row['aqsid']) & (data['variable']==pyvars[var]['var'])].value.astype('datetime64[s]')
 
-            # for each variable, there needs to be an entry in the var_info dict
-            stationData['var_info'][var] = dict()
-            stationData['var_info'][var]['units'] = pyvars[var]['unit']
+                # for each variable, there needs to be an entry in the var_info dict
+                stationData['var_info'][var] = dict()
+                stationData['var_info'][var]['units'] = pyvars[var]['unit']
 
-            stationsData.append(stationData)
-
+                stationsData.append(stationData)
+            except KeyError:
+                print("Available variables: ",av_data)
+                raise
     return stationsData
 
 

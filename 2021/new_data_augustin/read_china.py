@@ -6,7 +6,6 @@ import pandas as pd
 from tqdm import tqdm
 from datetime import datetime
 import numpy as np
-import dask.dataframe
 
 def read_cams84_china(files, vars_to_retrieve=None):
     # variables conversion and units dictionnary
@@ -70,27 +69,29 @@ def read_cams84_china(files, vars_to_retrieve=None):
         row = cfg.iloc[i]
 
         for var in vars_to_retrieve:
-            
-            #initialize stationData object
-            stationData = pya.StationData()
+            try:
+                #initialize stationData object
+                stationData = pya.StationData()
 
-            # fill stationData with cfg
-            stationData['data_id'] = 'CAMS84_CHINA'
-            stationData['station_name'] = row['stationName']
-            stationData['station_id'] = row['stationId']
-            stationData['latitude'] = row['latitude']
-            stationData['longitude'] = row['longitude']
-            stationData['ts_type'] = 'hourly'
+                # fill stationData with cfg
+                stationData['data_id'] = 'CAMS84_CHINA'
+                stationData['station_name'] = row['stationName']
+                stationData['station_id'] = row['stationId']
+                stationData['latitude'] = row['latitude']
+                stationData['longitude'] = row['longitude']
+                stationData['ts_type'] = 'hourly'
 
-            # fill stationData with data
-            stationData[var] = data.loc[(data['station_ID']==row['stationId']) & (data['species']==pyvars[var]['var'])].value.astype('datetime64[s]')
+                # fill stationData with data
+                stationData[var] = data.loc[(data['station_ID']==row['stationId']) & (data['species']==pyvars[var]['var'])].value.astype('datetime64[s]')
 
-            # for each variable, there needs to be an entry in the var_info dict
-            stationData['var_info'][var] = dict()
-            stationData['var_info'][var]['units'] = pyvars[var]['unit']
+                # for each variable, there needs to be an entry in the var_info dict
+                stationData['var_info'][var] = dict()
+                stationData['var_info'][var]['units'] = pyvars[var]['unit']
 
-            stationsData.append(stationData)
-
+                stationsData.append(stationData)
+            except KeyError:
+                print("Available variables: ",av_data)
+                raise
     return stationsData
 
 path_data = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/CHINA_SON2020_MP_NRT'

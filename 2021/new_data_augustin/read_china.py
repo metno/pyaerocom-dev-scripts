@@ -88,8 +88,8 @@ def read_cams84_china(files, vars_to_retrieve=None):
                 stationData['ts_type'] = 'hourly'
 
                 # fill stationData with data
-                mask = (data['species'] == pyvars[var]['var']) & (data['station_ID'] == stationData['station_id'])
-                stationData[var] = data[mask]['value'].astype('datetime64[s]')
+                mask = (dic_data['species'] == pyvars[var]['var']) & (dic_data['station_ID'] == stationData['station_id'])
+                stationData[var] = dic_data['value'][mask].astype('datetime64[s]')
 
                 # for each variable, there needs to be an entry in the var_info dict
                 stationData['var_info'][var] = dict()

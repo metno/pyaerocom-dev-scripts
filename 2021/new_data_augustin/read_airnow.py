@@ -140,13 +140,7 @@ def _make_station_data(dic_cfg, dic_data, i, var):
 
     return stat
 
-def read_airnow(files, vars_to_retrieve):
-
-    # first, read configuration file
-    print('read configuration file')
-    path_cfg = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'
-    fn = os.path.join(path_cfg,'allStations_20191224.csv')
-    cfg = pd.read_csv(fn,sep=',', converters={'aqsid': lambda x: str(x)})
+def read_airnow(files, vars_to_retrieve, stat_metadata):
 
 
     # read data using pandas
@@ -161,12 +155,12 @@ def read_airnow(files, vars_to_retrieve):
     data = _calc_datetime(data)
 
     #convert dataframes to dictionnaries
-    dic_cfg, dic_data = _data_to_dicts(data, cfg)
+    dic_cfg, dic_data = _data_to_dicts(data, stat_metadata)
 
     # list of stat objects
     print('create stat objects')
     stats = []
-    for i in tqdm(range(len(cfg['aqsid']))):
+    for i in tqdm(range(len(stat_metadata['aqsid']))):
         for var in vars_to_retrieve:
             try:
                 stat = _make_station_data(dic_cfg, dic_data, i, var)
@@ -197,6 +191,7 @@ class ReadAirNow(ReadUngriddedBase):
 
     TS_TYPE = 'hourly'
 
+    STAT_METADATA_FILENAME = 'allStations_20191224.csv'
 
     def __init__(self, data_dir=None):
         super(ReadAirNow, self).__init__(None, dataset_path=data_dir)
@@ -211,6 +206,11 @@ class ReadAirNow(ReadUngriddedBase):
         raise NotImplementedError('Not needed for these data since the format '
                                   'is unsuitable...')
 
+    def _read_metadata_file(self):
+        fn = os.path.join(self.DATASET_PATH, self.STAT_METADATA_FILENAME)
+        cfg = pd.read_csv(fn,sep=',', converters={'aqsid': lambda x: str(x)})
+        return cfg
+
     def read(self, vars_to_retrieve=None, first_file=None, last_file=None):
 
         if isinstance(vars_to_retrieve, str):
@@ -223,7 +223,8 @@ class ReadAirNow(ReadUngriddedBase):
             last_file = len(files)
         files = files[first_file:last_file]
 
-        stats = read_airnow(files, vars_to_retrieve)
+        stat_metadata = self._read_metadata_file()
+        stats = read_airnow(files, vars_to_retrieve, stat_metadata)
 
         data = UngriddedData.from_station_data(stats)
 

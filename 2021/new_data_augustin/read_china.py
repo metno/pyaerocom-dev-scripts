@@ -7,34 +7,35 @@ from tqdm import tqdm
 from datetime import datetime
 import numpy as np
 
-def read_cams84_china(files, vars_to_retrieve=None):
-    # variables conversion and units dictionnary
-    pyvars = {
-        'vmrco': {
-            'var': 'co',
-            'unit': 'nmole mole-1'
-        },
-        'vmrso2': {
-            'var': 'so2',
-            'unit': 'nmole mole-1'
-        },
-        'vmrno2': {
-            'var': 'no2',
-            'unit': 'nmole mole-1'
-        },
-        'vmro3': {
-            'var': 'o3',
-            'unit': 'nmole mole-1'
-        },
-        'concpm10': {
-            'var': 'pm10',
-            'unit': 'ug m-3'
-        },
-        'concpm25': {
-            'var': 'pm2_5',
-            'unit': 'ug m-3'
-        }
+# variables conversion and units dictionnary
+pyvars = {
+    'vmrco': {
+        'var': 'co',
+        'unit': 'nmole mole-1'
+    },
+    'vmrso2': {
+        'var': 'so2',
+        'unit': 'nmole mole-1'
+    },
+    'vmrno2': {
+        'var': 'no2',
+        'unit': 'nmole mole-1'
+    },
+    'vmro3': {
+        'var': 'o3',
+        'unit': 'nmole mole-1'
+    },
+    'concpm10': {
+        'var': 'pm10',
+        'unit': 'ug m-3'
+    },
+    'concpm25': {
+        'var': 'pm2_5',
+        'unit': 'ug m-3'
     }
+}
+
+def read_cams84_china(files, vars_to_retrieve=None):
     
     # first, read configuration file
     print('read configuration file')

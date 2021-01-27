@@ -7,54 +7,55 @@ from tqdm import tqdm
 from datetime import datetime
 import numpy as np
 
-def read_airnow(files, vars_to_retrieve=None):
-    # variables conversion and units dictionnary
-    pyvars = {
-        'concbc': {
-            'var': 'BC',
-            'unit': 'ppb'
-        },
-        'concco': {
-            'var': 'CO',
-            'unit': 'ppb'
-        },
-        'concnh3': {
-            'var': 'NH3',
-            'unit': 'ppb'
-        },
-        'concno': {
-            'var': 'NO',
-            'unit': 'ppb'
-        },
-        'concno2': {
-            'var': 'NO2',
-            'unit': 'ppb'
-        },
-        'concnox': {
-            'var': 'NOX',
-            'unit': 'ppb'
-        },
-        'concnoy': {
-            'var': 'NOY',
-            'unit': 'ppb'
-        },
-        'conco3': {
-            'var': 'OZONE',
-            'unit': 'ppb'
-        },
-        'concpm10': {
-            'var': 'PM10',
-            'unit': 'ug m-3'
-        },
-        'concpm25': {
-            'var': 'PM2.5',
-            'unit': 'ug m-3'
-        },
-        'concso2': {
-            'var': 'SO2',
-            'unit': 'ppb'
-        }
+# variables conversion and units dictionnary
+pyvars = {
+    'concbc': {
+        'var': 'BC',
+        'unit': 'ppb'
+    },
+    'concco': {
+        'var': 'CO',
+        'unit': 'ppb'
+    },
+    'concnh3': {
+        'var': 'NH3',
+        'unit': 'ppb'
+    },
+    'concno': {
+        'var': 'NO',
+        'unit': 'ppb'
+    },
+    'concno2': {
+        'var': 'NO2',
+        'unit': 'ppb'
+    },
+    'concnox': {
+        'var': 'NOX',
+        'unit': 'ppb'
+    },
+    'concnoy': {
+        'var': 'NOY',
+        'unit': 'ppb'
+    },
+    'conco3': {
+        'var': 'OZONE',
+        'unit': 'ppb'
+    },
+    'concpm10': {
+        'var': 'PM10',
+        'unit': 'ug m-3'
+    },
+    'concpm25': {
+        'var': 'PM2.5',
+        'unit': 'ug m-3'
+    },
+    'concso2': {
+        'var': 'SO2',
+        'unit': 'ppb'
     }
+}
+
+def read_airnow(files, vars_to_retrieve=None):
     
     # first, read configuration file
     print('read configuration file')

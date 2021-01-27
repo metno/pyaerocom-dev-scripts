@@ -85,19 +85,12 @@ def read_airnow(files, vars_to_retrieve=None):
         vars_to_retrieve = av_data
     
     
-    #convert dataframes to dictionnaries
-    dic_cfg = dict()
-    for column in cfg.columns:
-        dic_cfg[column] = cfg[column].values
-    dic_data = dict()
-    for column in data.columns:
-        dic_data[column] = data[column].values    
-
-    
     # list of stationData objects
     print('create stationData objects')
     stationsData = []
-    for i in tqdm(range(len(cfg['aqsid']))):
+    for i in tqdm(range(len(cfg))):
+        row = cfg.iloc[i]
+
         for var in vars_to_retrieve:
             try:
                 #initialize stationData object
@@ -105,16 +98,16 @@ def read_airnow(files, vars_to_retrieve=None):
 
                 # fill stationData with cfg
                 stationData['data_id'] = 'CAMS84_AIRNOW'
-                stationData['station_name'] = cfg['name'][i]
-                stationData['station_id'] = cfg['aqsid'][i]
-                stationData['latitude'] = cfg['lat'][i]
-                stationData['longitude'] = cfg['lon'][i]
-                stationData['altitude'] = cfg['elevation'][i]
+                stationData['station_name'] = row['name']
+                stationData['station_id'] = row['aqsid']
+                stationData['latitude'] = row['lat']
+                stationData['longitude'] = row['lon']
+                stationData['altitude'] = row['elevation']
                 stationData['ts_type'] = 'hourly'
 
                 # fill stationData with data
-                mask = (data['variable'] == pyvars[var]['var']) & (data['station_id'] == stationData['station_id'])
-                stationData[var] = data[mask]['value'].astype('datetime64[s]')
+                # Then, for each variable
+                stationData[var] = data.loc[(data['station_id']==row['aqsid']) & (data['variable']==pyvars[var]['var'])].value.astype('datetime64[s]')
 
                 # for each variable, there needs to be an entry in the var_info dict
                 stationData['var_info'][var] = dict()

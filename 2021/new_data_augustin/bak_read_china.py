@@ -61,19 +61,14 @@ def read_cams84_china(files, vars_to_retrieve=None):
     av_data = ['vmrco', 'vmrso2', 'vmrno2', 'vmro3', 'concpm10', 'concpm25']
     if vars_to_retrieve == None:
         vars_to_retrieve = av_data
-
-    #convert dataframes to dictionnaries
-    dic_cfg = dict()
-    for column in cfg.columns:
-        dic_cfg[column] = cfg[column].values
-    dic_data = dict()
-    for column in data.columns:
-        dic_data[column] = data[column].values    
+    
     
     # list of stationData objects
     print('create stationData objects')
     stationsData = []
-    for i in tqdm(range(len(dic_cfg['stationId']))):
+    for i in tqdm(range(len(cfg))):
+        row = cfg.iloc[i]
+
         for var in vars_to_retrieve:
             try:
                 #initialize stationData object
@@ -81,15 +76,14 @@ def read_cams84_china(files, vars_to_retrieve=None):
 
                 # fill stationData with cfg
                 stationData['data_id'] = 'CAMS84_CHINA'
-                stationData['station_name'] = dic_cfg['stationName'][i]
-                stationData['station_id'] = dic_cfg['stationId'][i]
-                stationData['latitude'] = dic_cfg['latitude'][i]
-                stationData['longitude'] = dic_cfg['longitude'][i]
+                stationData['station_name'] = row['stationName']
+                stationData['station_id'] = row['stationId']
+                stationData['latitude'] = row['latitude']
+                stationData['longitude'] = row['longitude']
                 stationData['ts_type'] = 'hourly'
 
                 # fill stationData with data
-                mask = (data['species'] == pyvars[var]['var']) & (data['station_ID'] == stationData['station_id'])
-                stationData[var] = data[mask]['value'].astype('datetime64[s]')
+                stationData[var] = data.loc[(data['station_ID']==row['stationId']) & (data['species']==pyvars[var]['var'])].value.astype('datetime64[s]')
 
                 # for each variable, there needs to be an entry in the var_info dict
                 stationData['var_info'][var] = dict()

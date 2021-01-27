@@ -55,45 +55,57 @@ pyvars = {
     }
 }
 
+def _read_file(file):
+    return pd.read_csv(file,sep='|',
+                       names=['mm/dd/yy',
+                              'hh:mm',
+                              'station_id',
+                              'station_name',
+                              'time_zone',
+                              'variable',
+                              'unit',
+                              'value',
+                              'Institute'])
+
+def _calc_datetime(data):
+    _sub = data.apply(lambda row: datetime(year=2000+int(
+        row['mm/dd/yy'].split('/')[2]),
+        month=int(row['mm/dd/yy'].split('/')[0]),
+        day=int(row['mm/dd/yy'].split('/')[1]),
+        hour=int(row['hh:mm'].split(':')[0]),
+        minute=int(row['hh:mm'].split(':')[1])),
+        axis=1)
+
+    data['datetime'] = pd.to_datetime(_sub)
+
 def read_airnow(files, vars_to_retrieve=None):
-    
+
     # first, read configuration file
     print('read configuration file')
     path_cfg = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'
     fn = os.path.join(path_cfg,'allStations_20191224.csv')
     cfg = pd.read_csv(fn,sep=',', converters={'aqsid': lambda x: str(x)})
-    
-    
+
+
     # read data using pandas
     print('read data file(s)')
     # initialize empty dataframe
     data = pd.DataFrame()
     for i in tqdm(range(len(files))):
-        data = data.append(pd.read_csv(files[i],sep='|',names=['mm/dd/yy','hh:mm','station_id','station_name','time_zone','variable','unit','value','Institute']))
-        
+        filedata = _read_file(files[i])
+        data = data.append(filedata)
+
     #create datetimeindex
-    data['datetime'] = pd.to_datetime(data.apply(lambda row: datetime(year=2000+int(row['mm/dd/yy'].split('/')[2]),month=int(row['mm/dd/yy'].split('/')[0]),day=int(row['mm/dd/yy'].split('/')[1]),hour=int(row['hh:mm'].split(':')[0]),minute=int(row['hh:mm'].split(':')[1])), axis=1))
+    data['datetime'] = _calc_datetime(data)
     data.set_index('datetime', inplace=True)
     #drop yy/mm/dd and hh:mm columns
     data.drop(columns=['mm/dd/yy','hh:mm'], inplace=True)
-    
-    
-    
+
     #list of available variables
     av_data = ['concbc', 'concco', 'concnh3', 'concno', 'concno2', 'concnox', 'concnoy', 'conco3', 'concpm10', 'concpm25', 'concso2']
     if vars_to_retrieve == None:
         vars_to_retrieve = av_data
-    
-    
-    #convert dataframes to dictionnaries
-    dic_cfg = dict()
-    for column in cfg.columns:
-        dic_cfg[column] = np.array(cfg[column].values)
-    dic_data = dict()
-    for column in data.columns:
-        dic_data[column] = np.array(data[column].values)
 
-    
     # list of stationData objects
     print('create stationData objects')
     stationsData = []
@@ -126,9 +138,11 @@ def read_airnow(files, vars_to_retrieve=None):
                 raise
     return stationsData
 
+if __name__ == '__main__':
+    path_data = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'
+    dirs = [os.path.join(path_data, o) for o in os.listdir(path_data) if os.path.isdir(os.path.join(path_data,o))]
+    files = [glob(os.path.join(path_data, d, '*.dat')) for d in dirs][0]
 
-path_data = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'
-dirs = [os.path.join(path_data, o) for o in os.listdir(path_data) if os.path.isdir(os.path.join(path_data,o))]
-files = [glob(os.path.join(path_data, d, '*.dat')) for d in dirs][0]
-    
-data = read_airnow(files, ['concpm10'])
+    data = read_airnow(files[:1], ['concpm10'])
+
+    #data1 = _read_file_alt(files[0])

@@ -7,9 +7,13 @@ from tqdm import tqdm
 from datetime import datetime
 import numpy as np
 
+from pyaerocom.io import ReadUngriddedBase
+from pyaerocom import UngriddedData
 # variables conversion and units dictionnary
 
 BASEDATE = 2000
+
+
 PYVARS = {
     'concbc': {
         'var': 'BC',
@@ -56,6 +60,8 @@ PYVARS = {
         'unit': 'ppb'
     }
 }
+
+PROVIDES_VARIABLES = list(PYVARS.keys())
 
 def _read_file(file):
     return pd.read_csv(file,sep='|',
@@ -141,9 +147,9 @@ def read_airnow(files, vars_to_retrieve=None):
     data = _calc_datetime(data)
 
     #list of available variables
-    av_data = ['concbc', 'concco', 'concnh3', 'concno', 'concno2', 'concnox', 'concnoy', 'conco3', 'concpm10', 'concpm25', 'concso2']
+    PROVIDES_VARIABLES = ['concbc', 'concco', 'concnh3', 'concno', 'concno2', 'concnox', 'concnoy', 'conco3', 'concpm10', 'concpm25', 'concso2']
     if vars_to_retrieve == None:
-        vars_to_retrieve = av_data
+        vars_to_retrieve = PROVIDES_VARIABLES
 
     #convert dataframes to dictionnaries
     dic_cfg, dic_data = _data_to_dicts(data, cfg)
@@ -158,15 +164,75 @@ def read_airnow(files, vars_to_retrieve=None):
 
                 stats.append(stat)
             except KeyError:
-                print("Available variables: ",av_data)
+                print("Available variables: ",PROVIDES_VARIABLES)
                 raise
     return stats
 
+class ReadAirNow(ReadUngriddedBase):
+    _FILEMASK = '/**/*.dat' # fix
+
+    #: version log of this class (for caching)
+    __version__ = '0.1'
+
+    COL_DELIM = '|'
+
+    #: Name of dataset (OBS_ID)
+    DATA_ID = 'AirNow' #'GAWTADsubsetAasEtAl'
+
+    #: List of all datasets supported by this interface
+    SUPPORTED_DATASETS = [DATA_ID]
+
+    PROVIDES_VARIABLES = PROVIDES_VARIABLES
+
+    DEFAULT_VARS = PROVIDES_VARIABLES
+
+    TS_TYPE = 'hourly'
+
+
+    def __init__(self, data_dir=None):
+        super(ReadAirNow, self).__init__(None, dataset_path=data_dir)
+
+    def get_file_list(self):
+        basepath = self.DATASET_PATH
+        pattern = f'{basepath}{self._FILEMASK}'
+        files = sorted(glob(pattern))
+        return files
+
+    def read_file(self):
+        raise NotImplementedError('Not needed for these data since the format '
+                                  'is unsuitable...')
+
+    def read(self, vars_to_retrieve=None, first_file=None, last_file=None):
+
+        if isinstance(vars_to_retrieve, str):
+            vars_to_retrieve = [vars_to_retrieve]
+
+        files = self.get_file_list()
+        if first_file is None:
+            first_file = 0
+        if last_file is None:
+            last_file = len(files)
+        files = files[first_file:last_file]
+
+        stats = read_airnow(files, vars_to_retrieve)
+
+        data = UngriddedData.from_station_data(stats)
+
+
+        return data
+
+
 if __name__ == '__main__':
     path_data = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'
-    dirs = [os.path.join(path_data, o) for o in os.listdir(path_data) if os.path.isdir(os.path.join(path_data,o))]
-    files = [glob(os.path.join(path_data, d, '*.dat')) for d in dirs][0]
+# =============================================================================
+#     dirs = [os.path.join(path_data, o) for o in os.listdir(path_data) if os.path.isdir(os.path.join(path_data,o))]
+#     files = [glob(os.path.join(path_data, d, '*.dat')) for d in dirs][0]
+# =============================================================================
 
-    data = read_airnow(files[:10], ['concpm10'])
+    #data = read_airnow(files[:1], ['concpm10'])
+
+    reader = ReadAirNow(data_dir=path_data)
+
+    data = reader.read('concpm10', last_file=2)
 
     #data1 = _read_file_alt(files[0])

@@ -77,6 +77,41 @@ def _calc_datetime(data):
         axis=1)
 
     data['datetime'] = pd.to_datetime(_sub)
+    data.set_index('datetime', inplace=True)
+    #drop yy/mm/dd and hh:mm columns
+    data.drop(columns=['mm/dd/yy','hh:mm'], inplace=True)
+    return data
+
+def _data_to_dicts(data, cfg):
+    dic_cfg = dict()
+    for column in cfg.columns:
+        dic_cfg[column] = np.array(cfg[column].values)
+    dic_data = dict()
+    for column in data.columns:
+        dic_data[column] = np.array(data[column].values)
+    return (dic_cfg, dic_data)
+
+def _make_station_data(dic_cfg, dic_data, i, var):
+    stat = pya.StationData()
+
+    # fill stat with cfg
+    stat['data_id'] = 'CAMS84_AIRNOW'
+    stat['station_name'] = dic_cfg['name'][i]
+    stat['station_id'] = dic_cfg['aqsid'][i]
+    stat['latitude'] = dic_cfg['lat'][i]
+    stat['longitude'] = dic_cfg['lon'][i]
+    stat['altitude'] = dic_cfg['elevation'][i]
+    stat['ts_type'] = 'hourly'
+
+    # fill stat with data
+    mask = (dic_data['variable'] == pyvars[var]['var']) & (dic_data['station_id'] == stat['station_id'])
+    stat[var] = dic_data['value'][mask].astype('datetime64[s]')
+
+    # for each variable, there needs to be an entry in the var_info dict
+    stat['var_info'][var] = dict()
+    stat['var_info'][var]['units'] = pyvars[var]['unit']
+
+    return stat
 
 def read_airnow(files, vars_to_retrieve=None):
 
@@ -96,47 +131,29 @@ def read_airnow(files, vars_to_retrieve=None):
         data = data.append(filedata)
 
     #create datetimeindex
-    data['datetime'] = _calc_datetime(data)
-    data.set_index('datetime', inplace=True)
-    #drop yy/mm/dd and hh:mm columns
-    data.drop(columns=['mm/dd/yy','hh:mm'], inplace=True)
+    data = _calc_datetime(data)
 
     #list of available variables
     av_data = ['concbc', 'concco', 'concnh3', 'concno', 'concno2', 'concnox', 'concnoy', 'conco3', 'concpm10', 'concpm25', 'concso2']
     if vars_to_retrieve == None:
         vars_to_retrieve = av_data
 
-    # list of stationData objects
-    print('create stationData objects')
-    stationsData = []
+    #convert dataframes to dictionnaries
+    dic_cfg, dic_data = _data_to_dicts(data, cfg)
+
+    # list of stat objects
+    print('create stat objects')
+    stats = []
     for i in tqdm(range(len(cfg['aqsid']))):
         for var in vars_to_retrieve:
             try:
-                #initialize stationData object
-                stationData = pya.StationData()
+                stat = _make_station_data(dic_cfg, dic_data, i, var)
 
-                # fill stationData with cfg
-                stationData['data_id'] = 'CAMS84_AIRNOW'
-                stationData['station_name'] = dic_cfg['name'][i]
-                stationData['station_id'] = dic_cfg['aqsid'][i]
-                stationData['latitude'] = dic_cfg['lat'][i]
-                stationData['longitude'] = dic_cfg['lon'][i]
-                stationData['altitude'] = dic_cfg['elevation'][i]
-                stationData['ts_type'] = 'hourly'
-
-                # fill stationData with data
-                mask = (dic_data['variable'] == pyvars[var]['var']) & (dic_data['station_id'] == stationData['station_id'])
-                stationData[var] = dic_data['value'][mask].astype('datetime64[s]')
-
-                # for each variable, there needs to be an entry in the var_info dict
-                stationData['var_info'][var] = dict()
-                stationData['var_info'][var]['units'] = pyvars[var]['unit']
-
-                stationsData.append(stationData)
+                stats.append(stat)
             except KeyError:
                 print("Available variables: ",av_data)
                 raise
-    return stationsData
+    return stats
 
 if __name__ == '__main__':
     path_data = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'

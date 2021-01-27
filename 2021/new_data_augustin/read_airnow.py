@@ -105,16 +105,16 @@ def read_airnow(files, vars_to_retrieve=None):
 
                 # fill stationData with cfg
                 stationData['data_id'] = 'CAMS84_AIRNOW'
-                stationData['station_name'] = cfg['name'][i]
-                stationData['station_id'] = cfg['aqsid'][i]
-                stationData['latitude'] = cfg['lat'][i]
-                stationData['longitude'] = cfg['lon'][i]
-                stationData['altitude'] = cfg['elevation'][i]
+                stationData['station_name'] = dic_cfg['name'][i]
+                stationData['station_id'] = dic_cfg['aqsid'][i]
+                stationData['latitude'] = dic_cfg['lat'][i]
+                stationData['longitude'] = dic_cfg['lon'][i]
+                stationData['altitude'] = dic_cfg['elevation'][i]
                 stationData['ts_type'] = 'hourly'
 
                 # fill stationData with data
-                mask = (data['variable'] == pyvars[var]['var']) & (data['station_id'] == stationData['station_id'])
-                stationData[var] = data[mask]['value'].astype('datetime64[s]')
+                mask = (dic_data['variable'] == pyvars[var]['var']) & (dic_data['station_id'] == stationData['station_id'])
+                stationData[var] = dic_data['value'][mask].astype('datetime64[s]')
 
                 # for each variable, there needs to be an entry in the var_info dict
                 stationData['var_info'][var] = dict()

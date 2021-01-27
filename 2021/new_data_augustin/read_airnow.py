@@ -8,6 +8,7 @@ from datetime import datetime
 import numpy as np
 
 from pyaerocom.io import ReadUngriddedBase
+from pyaerocom.exceptions import DataCoverageError
 from pyaerocom import UngriddedData
 # variables conversion and units dictionnary
 
@@ -89,10 +90,10 @@ def _calc_datetime(data):
 
     dt = make_datetime64_array(dates, times)
 
-    data['datetime'] = dt
-    data.set_index('datetime', inplace=True)
+    data['dtime'] = dt
+    #data.set_index('datetime', inplace=True)
     #drop yy/mm/dd and hh:mm columns
-    data.drop(columns=['mm/dd/yy','hh:mm'], inplace=True)
+    #data.drop(columns=['mm/dd/yy','hh:mm'], inplace=True)
     return data
 
 def _data_to_dicts(data, cfg):
@@ -105,20 +106,33 @@ def _data_to_dicts(data, cfg):
     return (dic_cfg, dic_data)
 
 def _make_station_data(dic_cfg, dic_data, i, var):
+
+    statid = dic_cfg['aqsid'][i]
+
+    mask = (dic_data['variable'] == PYVARS[var]['var']) & (dic_data['station_id'] == statid)
+
+    if mask.sum() == 0:
+        raise DataCoverageError('No data ...')
+
     stat = pya.StationData()
 
     # fill stat with cfg
     stat['data_id'] = 'CAMS84_AIRNOW'
     stat['station_name'] = dic_cfg['name'][i]
-    stat['station_id'] = dic_cfg['aqsid'][i]
+    stat['station_id'] = statid
     stat['latitude'] = dic_cfg['lat'][i]
     stat['longitude'] = dic_cfg['lon'][i]
     stat['altitude'] = dic_cfg['elevation'][i]
     stat['ts_type'] = 'hourly'
 
+
     # fill stat with data
-    mask = (dic_data['variable'] == PYVARS[var]['var']) & (dic_data['station_id'] == stat['station_id'])
-    stat[var] = dic_data['value'][mask].astype('datetime64[s]')
+
+    vals = dic_data['value'][mask]
+    dtime = dic_data['dtime'][mask]
+
+    stat[var] = vals
+    stat['dtime'] = dtime
 
     # for each variable, there needs to be an entry in the var_info dict
     stat['var_info'][var] = dict()
@@ -126,7 +140,7 @@ def _make_station_data(dic_cfg, dic_data, i, var):
 
     return stat
 
-def read_airnow(files, vars_to_retrieve=None):
+def read_airnow(files, vars_to_retrieve):
 
     # first, read configuration file
     print('read configuration file')
@@ -146,11 +160,6 @@ def read_airnow(files, vars_to_retrieve=None):
     #create datetimeindex
     data = _calc_datetime(data)
 
-    #list of available variables
-    PROVIDES_VARIABLES = ['concbc', 'concco', 'concnh3', 'concno', 'concno2', 'concnox', 'concnoy', 'conco3', 'concpm10', 'concpm25', 'concso2']
-    if vars_to_retrieve == None:
-        vars_to_retrieve = PROVIDES_VARIABLES
-
     #convert dataframes to dictionnaries
     dic_cfg, dic_data = _data_to_dicts(data, cfg)
 
@@ -163,9 +172,9 @@ def read_airnow(files, vars_to_retrieve=None):
                 stat = _make_station_data(dic_cfg, dic_data, i, var)
 
                 stats.append(stat)
-            except KeyError:
-                print("Available variables: ",PROVIDES_VARIABLES)
-                raise
+            except (DataCoverageError):
+                pass
+
     return stats
 
 class ReadAirNow(ReadUngriddedBase):
@@ -218,7 +227,6 @@ class ReadAirNow(ReadUngriddedBase):
 
         data = UngriddedData.from_station_data(stats)
 
-
         return data
 
 
@@ -233,6 +241,7 @@ if __name__ == '__main__':
 
     reader = ReadAirNow(data_dir=path_data)
 
-    data = reader.read('concpm10', last_file=2)
+    data = reader.read('concpm10', last_file=10)
 
+    data.plot_station_coordinates()
     #data1 = _read_file_alt(files[0])

@@ -24,14 +24,6 @@ obs = r.read(vars_to_retrieve=var, common_meta={'ts_type':'daily'})
 obs_ref = r_ref.read(vars_to_retrieve=[var_ref, var, 'od550gt1aer'],
                      common_meta={'ts_type':'daily'})
 
-
-
-#col_freq = 'hourly'
-#start = '2010-03-01'
-#stop = '2010-04-03'
-#start = to_pandas_timestamp(start)
-#stop = to_pandas_timestamp(stop)
-
 if len(obs.contains_datasets) > 1:
     raise NotImplementedError
 elif len(obs_ref.contains_datasets) > 1:
@@ -196,11 +188,8 @@ for i, stat in enumerate(short['stats']):
 
     merged_stats.append(new)
 
+data = pya.UngriddedData.from_station_data(merged_stats)
 
-try:
-    data = pya.UngriddedData.from_station_data(merged_stats)
-except NotImplementedError:
-    print('Coming next week')
 # =============================================================================
 #
 #     var ='od550aer'

@@ -65,10 +65,10 @@ def read_cams84_china(files, vars_to_retrieve=None):
     #convert dataframes to dictionnaries
     dic_cfg = dict()
     for column in cfg.columns:
-        dic_cfg[column] = cfg[column].values
+        dic_cfg[column] = np.array(cfg[column].values)
     dic_data = dict()
     for column in data.columns:
-        dic_data[column] = data[column].values    
+        dic_data[column] = np.array(data[column].values)
     
     # list of stationData objects
     print('create stationData objects')

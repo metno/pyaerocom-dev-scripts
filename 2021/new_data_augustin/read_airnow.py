@@ -8,7 +8,9 @@ from datetime import datetime
 import numpy as np
 
 # variables conversion and units dictionnary
-pyvars = {
+
+BASEDATE = 2000
+PYVARS = {
     'concbc': {
         'var': 'BC',
         'unit': 'ppb'
@@ -67,16 +69,21 @@ def _read_file(file):
                               'value',
                               'Institute'])
 
-def _calc_datetime(data):
-    _sub = data.apply(lambda row: datetime(year=2000+int(
-        row['mm/dd/yy'].split('/')[2]),
-        month=int(row['mm/dd/yy'].split('/')[0]),
-        day=int(row['mm/dd/yy'].split('/')[1]),
-        hour=int(row['hh:mm'].split(':')[0]),
-        minute=int(row['hh:mm'].split(':')[1])),
-        axis=1)
+def _date_time_str_to_datetime64(date, time):
+    mm, dd, yy = date.split('/')
+    HH, MM = time.split(':')
+    yr=str(BASEDATE+int(yy))
+    return np.datetime64(f'{yr}-{mm}-{dd}T{HH}:{MM}:00')
 
-    data['datetime'] = pd.to_datetime(_sub)
+make_datetime64_array = np.vectorize(_date_time_str_to_datetime64)
+
+def _calc_datetime(data):
+    dates  = data['mm/dd/yy'].values
+    times = data['hh:mm'].values
+
+    dt = make_datetime64_array(dates, times)
+
+    data['datetime'] = dt
     data.set_index('datetime', inplace=True)
     #drop yy/mm/dd and hh:mm columns
     data.drop(columns=['mm/dd/yy','hh:mm'], inplace=True)
@@ -104,12 +111,12 @@ def _make_station_data(dic_cfg, dic_data, i, var):
     stat['ts_type'] = 'hourly'
 
     # fill stat with data
-    mask = (dic_data['variable'] == pyvars[var]['var']) & (dic_data['station_id'] == stat['station_id'])
+    mask = (dic_data['variable'] == PYVARS[var]['var']) & (dic_data['station_id'] == stat['station_id'])
     stat[var] = dic_data['value'][mask].astype('datetime64[s]')
 
     # for each variable, there needs to be an entry in the var_info dict
     stat['var_info'][var] = dict()
-    stat['var_info'][var]['units'] = pyvars[var]['unit']
+    stat['var_info'][var]['units'] = PYVARS[var]['unit']
 
     return stat
 
@@ -160,6 +167,6 @@ if __name__ == '__main__':
     dirs = [os.path.join(path_data, o) for o in os.listdir(path_data) if os.path.isdir(os.path.join(path_data,o))]
     files = [glob(os.path.join(path_data, d, '*.dat')) for d in dirs][0]
 
-    data = read_airnow(files[:1], ['concpm10'])
+    data = read_airnow(files[:10], ['concpm10'])
 
     #data1 = _read_file_alt(files[0])

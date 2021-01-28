@@ -16,6 +16,12 @@ def _date_time_str_to_datetime64(date, time):
     yr=str(2000+int(yy))
     return np.datetime64(f'{yr}-{mm}-{dd}T{HH}:{MM}:00')
 
+def _date_time_str_to_datetime64_gen(date, time):
+    mm, dd, yy = date.split('/')
+    HH, MM = time.split(':')
+    yr=str(2000+int(yy))
+    yield np.datetime64(f'{yr}-{mm}-{dd}T{HH}:{MM}:00')
+
 def _date_time_str_to_datetime64_alt(date, time):
     mm, dd, yy = date.split('/')
     HH, MM = time.split(':')
@@ -51,6 +57,11 @@ if __name__ == '__main__':
     fun = np.vectorize(_date_time_str_to_datetime64)
     t0 = time()
     dts2 = fun(dates, times)
+    print(f'NEW METHOD (FAST, vectorized): {time()-t0:.2f} s')
+
+    fun = np.vectorize(_date_time_str_to_datetime64_gen)
+    t0 = time()
+    dts3 = fun(dates, times)
     print(f'NEW METHOD (FAST, vectorized): {time()-t0:.2f} s')
 
     raise Exception

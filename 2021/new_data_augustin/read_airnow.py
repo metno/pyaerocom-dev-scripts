@@ -44,6 +44,20 @@ class ReadAirNow(ReadUngriddedBase):
             'comment'           : 'comment'
             }
 
+    STATION_META_DTYPES = {
+            'station_id'        : str,
+            'station_name'      : str,
+            'latitude'          : float,
+            'longitude'         : float,
+            'altitude'          : float,
+            'city'              : str,
+            'address'           : str,
+            'timezone'          : str,
+            'environment'       : str,
+            'modificationdate'  : str,
+            'classification'    : str,
+            'comment'           : str
+            }
     #:
     BASEYEAR = 2000
 
@@ -100,12 +114,6 @@ class ReadAirNow(ReadUngriddedBase):
         # returns as datetime64[s]
         return np.datetime64(f'{yr}-{mm}-{dd}T{HH}:{MM}:00')
 
-    def _calc_datetime(self, data):
-        dates  = data['date'].values
-        times = data['time'].values
-
-        return self.make_datetime64_array(dates, times)
-
     def _datetime_from_filename(self, filepath):
         fn = os.path.basename(filepath).split(self._FILETYPE)[0]
         assert len(fn) == 10
@@ -129,14 +137,6 @@ class ReadAirNow(ReadUngriddedBase):
         stat_ids = list(stat_meta.keys())
         print('read data file(s)')
         # initialize empty dataframe
-        data = pd.DataFrame()
-
-        for i in tqdm(range(len(files))):
-            fp = files[i]
-            filedata = self._read_file(fp)
-            data = data.append(filedata)
-
-        dtime = self._calc_datetime(data)
 
         varcol = self.FILE_COL_NAMES.index('variable')
         statcol = self.FILE_COL_NAMES.index('station_id')
@@ -144,13 +144,31 @@ class ReadAirNow(ReadUngriddedBase):
         unitcol = self.FILE_COL_NAMES.index('unit')
         valcol = self.FILE_COL_NAMES.index('value')
 
-        dataarr = data.values
+        arrs = []
+        for i in tqdm(range(len(files))):
+            fp = files[i]
+            filedata = self._read_file(fp)
+            arr = filedata.values
+
+            for i, var in enumerate(vars_to_retrieve):
+                if i == 0:
+                    mask = arr[:, varcol] == self.VAR_MAP[var]
+                else:
+                    mask = np.logical_or(mask, arr[:, varcol] == self.VAR_MAP[var])
+            matches = mask.sum()
+            if matches:
+                vardata = arr[mask]
+                arrs.append(vardata)
+
+        data = np.concatenate(arrs)
+
+        dtime = self.make_datetime64_array(data[:, 0], data[:, 1])
         stats = []
         for var in vars_to_retrieve:
             # extract only variable data (should speed things up)
             var_in_file = self.VAR_MAP[var]
-            mask = dataarr[:, varcol] == var_in_file
-            subset = dataarr[mask]
+            mask = data[:, varcol] == var_in_file
+            subset = data[mask]
             dtime_subset = dtime[mask]
             statlist = np.unique(subset[:, statcol])
 
@@ -212,13 +230,13 @@ class ReadAirNow(ReadUngriddedBase):
             col_idx[to_meta] = cols.index(from_meta)
 
         arr = cfg.values
-
+        dtypes = self.STATION_META_DTYPES
 #        station_names = arr[:, col_idx['station_name']]
         stats = {}
         for row in arr:
             stat = {}
             for meta_key, col_num in col_idx.items():
-                stat[meta_key] = row[col_num]
+                stat[meta_key] = dtypes[meta_key](row[col_num])
             sid = stat['station_id']
             stats[sid] = stat
 
@@ -247,7 +265,7 @@ if __name__ == '__main__':
     import matplotlib.pyplot as plt
     plt.close('all')
     path_data = '/lustre/storeA/project/aerocom/aerocom1/AEROCOM_OBSDATA/MACC_INSITU_AirNow'
-    #path_data = '/home/jonasg/MyPyaerocom/data/obsdata/MACC_INSITU_AirNow'
+    path_data = '/home/jonasg/MyPyaerocom/data/obsdata/MACC_INSITU_AirNow'
 
     test_file =  path_data + '/202001/2020010100.dat'
     reader = ReadAirNow(data_dir=path_data)
@@ -255,9 +273,10 @@ if __name__ == '__main__':
     #data = reader._read_file(test_file)
 
     last_file = None
-    data = reader.read('concpm10', last_file=last_file)
+    varis = ['concpm10', 'concpm25']
+    data = reader.read(varis, last_file=last_file)
 
-    if last_file == 10:
-        assert len(data.unique_station_names) == 196
+    if last_file == 10 and varis == ['concpm10', 'concpm25']:
+        assert len(data.unique_station_names) == 744
     data.plot_station_coordinates()
     #data1 = _read_file_alt(files[0])

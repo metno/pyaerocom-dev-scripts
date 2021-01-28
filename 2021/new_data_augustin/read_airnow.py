@@ -67,51 +67,18 @@ class ReadAirNow(ReadUngriddedBase):
         }
 
     VAR_MAP = {
-        'concbc': {
-            'var': 'BC',
-            'unit': 'ppb'
-        },
-        'concco': {
-            'var': 'CO',
-            'unit': 'ppb'
-        },
-        'concnh3': {
-            'var': 'NH3',
-            'unit': 'ppb'
-        },
-        'concno': {
-            'var': 'NO',
-            'unit': 'ppb'
-        },
-        'concno2': {
-            'var': 'NO2',
-            'unit': 'ppb'
-        },
-        'concnox': {
-            'var': 'NOX',
-            'unit': 'ppb'
-        },
-        'concnoy': {
-            'var': 'NOY',
-            'unit': 'ppb'
-        },
-        'conco3': {
-            'var': 'OZONE',
-            'unit': 'ppb'
-        },
-        'concpm10': {
-            'var': 'PM10',
-            'unit': 'ug m-3'
-        },
-        'concpm25': {
-            'var': 'PM2.5',
-            'unit': 'ug m-3'
-        },
-        'concso2': {
-            'var': 'SO2',
-            'unit': 'ppb'
+        'concbc'    : 'BC',
+        'concco'    : 'CO',
+        'concnh3'   : 'NH3',
+        'concno'    : 'NO',
+        'concno2'   : 'NO2',
+        'concnox'   : 'NOX',
+        'concnoy'   : 'NOY',
+        'conco3'    : 'OZONE',
+        'concpm10'  : 'PM10',
+        'concpm25'  : 'PM2.5',
+        'concso2'   : 'SO2',
         }
-    }
 
     PROVIDES_VARIABLES = list(VAR_MAP.keys())
 
@@ -137,11 +104,7 @@ class ReadAirNow(ReadUngriddedBase):
         dates  = data['date'].values
         times = data['time'].values
 
-        dt = self.make_datetime64_array(dates, times)
-
-        data['dtime'] = dt
-
-        return data
+        return self.make_datetime64_array(dates, times)
 
     def _datetime_from_filename(self, filepath):
         fn = os.path.basename(filepath).split(self._FILETYPE)[0]
@@ -149,104 +112,20 @@ class ReadAirNow(ReadUngriddedBase):
         tstr = f'{fn[:4]}-{fn[4:6]}-{fn[6:8]}T{fn[8:10]}:00:00'
         return np.datetime64(tstr)
 
-    @staticmethod
-    def _data_to_dicts(data, cfg):
-        dic_cfg = dict()
-        for column in cfg.columns:
-            dic_cfg[column] = np.array(cfg[column].values)
-        dic_data = dict()
-        for column in data.columns:
-            dic_data[column] = np.array(data[column].values)
-        return (dic_cfg, dic_data)
-
-    def _make_station_data(self, dic_cfg, dic_data, i, var):
-
-        statid = dic_cfg['aqsid'][i]
-
-        mask = (dic_data['variable'] == self.VAR_MAP[var]['var']) & (dic_data['station_id'] == statid)
-
-        if mask.sum() == 0:
-            raise DataCoverageError('No data ...')
-
-        stat = StationData()
-
-        # fill stat with cfg
-        stat['data_id'] = 'CAMS84_AIRNOW'
-        stat['station_name'] = dic_cfg['name'][i]
-        stat['station_id'] = statid
-        stat['latitude'] = dic_cfg['lat'][i]
-        stat['longitude'] = dic_cfg['lon'][i]
-        stat['altitude'] = dic_cfg['elevation'][i]
-        stat['ts_type'] = 'hourly'
-
-
-        # fill stat with data
-
-        vals = dic_data['value'][mask]
-        dtime = dic_data['dtime'][mask]
-
-        stat[var] = vals
-        stat['dtime'] = dtime
-
-        # for each variable, there needs to be an entry in the var_info dict
-        stat['var_info'][var] = dict()
-        stat['var_info'][var]['units'] = self.VAR_MAP[var]['unit']
-
-        return stat
-
     def get_file_list(self):
         basepath = self.DATASET_PATH
         pattern = f'{basepath}{self._FILEMASK}'
         files = sorted(glob(pattern))
         return files
 
-    def _read_file(self, file, assert_same_dtime=False):
+    def _read_file(self, file, assert_same_dtime=True):
         df = pd.read_csv(file,sep=self.FILE_COL_DELIM,
                          names=self.FILE_COL_NAMES)
-        if assert_same_dtime:
-            dates = np.unique(df.date.values)
-            times = np.unique(df.time.values)
-            assert 1 == len(dates) == len(times)
-        df['dtime'] = self._datetime_from_filename(file)
         return df
 
-    def _read_files(self, files, vars_to_retrieve, stat_metadata):
+    def _read_files(self, files, vars_to_retrieve):
 
-
-        # read data using pandas
-        print('read data file(s)')
-        # initialize empty dataframe
-        data = pd.DataFrame()
-
-        for i in tqdm(range(len(files))):
-            fp = files[i]
-            filedata = self._read_file(fp)
-            data = data.append(filedata)
-
-        #create datetimeindex
-        #data = self._calc_datetime(data)
-
-        #convert dataframes to dictionnaries
-        dic_cfg, dic_data = self._data_to_dicts(data, stat_metadata)
-
-        # list of stat objects
-        print('create stat objects')
-        stats = []
-        for i in tqdm(range(len(stat_metadata['aqsid']))):
-            for var in vars_to_retrieve:
-                try:
-                    stat = self._make_station_data(dic_cfg, dic_data, i, var)
-
-                    stats.append(stat)
-                except (DataCoverageError):
-                    pass
-
-        return stats
-
-    def _read_files_new(self, files, vars_to_retrieve,
-                                    stat_metadata):
-
-        stat_meta = self._init_station_metadata(stat_metadata)
+        stat_meta = self._init_station_metadata()
         stat_ids = list(stat_meta.keys())
         print('read data file(s)')
         # initialize empty dataframe
@@ -257,6 +136,7 @@ class ReadAirNow(ReadUngriddedBase):
             filedata = self._read_file(fp)
             data = data.append(filedata)
 
+        dtime = self._calc_datetime(data)
 
         varcol = self.FILE_COL_NAMES.index('variable')
         statcol = self.FILE_COL_NAMES.index('station_id')
@@ -268,11 +148,12 @@ class ReadAirNow(ReadUngriddedBase):
         stats = []
         for var in vars_to_retrieve:
             # extract only variable data (should speed things up)
-            var_in_file = self.VAR_MAP[var]['var']
+            var_in_file = self.VAR_MAP[var]
             mask = dataarr[:, varcol] == var_in_file
             subset = dataarr[mask]
-
+            dtime_subset = dtime[mask]
             statlist = np.unique(subset[:, statcol])
+
 
             for stat_id in statlist:
                 if not stat_id in stat_ids:
@@ -281,14 +162,18 @@ class ReadAirNow(ReadUngriddedBase):
                 if statmask.sum() == 0:
                     continue
                 statdata = subset[statmask]
+                timestamps = dtime_subset[statmask]
+
                 stat = StationData(**stat_meta[stat_id])
-                dtime = statdata[:, -1]
                 offs = np.unique(statdata[:, tzonecol])
+
+
                 if not len(offs) == 1:
                     raise NotImplementedError(
                         f'Encountered several timezones for station ID {stat_id}'
                         )
-
+                # account for timezone
+                timedelta = np.timedelta64(int(offs[0]), 'h')
                 vals = statdata[:, valcol]
                 units = np.unique(statdata[:, unitcol])
                 if len(units) != 1:
@@ -299,7 +184,8 @@ class ReadAirNow(ReadUngriddedBase):
                     raise AttributeError(
                         'Encountered unregistered unit {units[0]} for {var}'
                         )
-                stat['dtime'] = dtime
+                stat['dtime'] = timestamps + timedelta
+                stat['timezone'] ='UTC'
                 stat[var] = vals
                 unit = self.UNIT_MAP[units[0]]
                 stat['var_info'][var] = dict(units=unit)
@@ -315,7 +201,9 @@ class ReadAirNow(ReadUngriddedBase):
         cfg = pd.read_csv(fn,sep=',', converters={'aqsid': lambda x: str(x)})
         return cfg
 
-    def _init_station_metadata(self, cfg):
+    def _init_station_metadata(self):
+
+        cfg = self._read_metadata_file()
         meta_map = self.STATION_META_MAP
 
         cols = list(cfg.columns.values)
@@ -336,8 +224,7 @@ class ReadAirNow(ReadUngriddedBase):
 
         return stats
 
-    def read(self, vars_to_retrieve=None, first_file=None, last_file=None,
-             new_method=False):
+    def read(self, vars_to_retrieve=None, first_file=None, last_file=None):
 
         if isinstance(vars_to_retrieve, str):
             vars_to_retrieve = [vars_to_retrieve]
@@ -349,12 +236,7 @@ class ReadAirNow(ReadUngriddedBase):
             last_file = len(files)
         files = files[first_file:last_file]
 
-        stat_metadata = self._read_metadata_file()
-        if new_method:
-            fun = self._read_files_new
-        else:
-            fun = self._read_files
-        stats = fun(files, vars_to_retrieve, stat_metadata)
+        stats = self._read_files(files, vars_to_retrieve)
 
         data = UngriddedData.from_station_data(stats)
 
@@ -372,8 +254,8 @@ if __name__ == '__main__':
 
     #data = reader._read_file(test_file)
 
-    last_file = 10
-    data = reader.read('concpm10', last_file=last_file, new_method=False)
+    last_file = None
+    data = reader.read('concpm10', last_file=last_file)
 
     if last_file == 10:
         assert len(data.unique_station_names) == 196
